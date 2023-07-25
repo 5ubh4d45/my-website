@@ -1,9 +1,11 @@
 <script lang="ts">
     import "../app.css";
-    import Navbar from "$lib/components/navbar.svelte";
+    import Navbar from "$lib/components/navbar/Navbar.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 </script>
 
-<div class="flex flex-col mx-2">
-    <Navbar/>
+<Navbar/>
+<main class="flex flex-col mx-2 min-h-screen">
     <slot/>
-</div>
+</main>
+<Footer />
